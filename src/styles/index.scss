@@ -1,0 +1,40 @@
+@import './colors';
+
+.container {
+    background: $pokewhite;
+    border-radius: 10px;
+}
+
+.title {
+    border-bottom: 1px solid $pokeblack;
+}
+
+h3, p {
+    margin-left: 1rem;
+    width: 95%;
+    text-align: left;
+    z-index: 2;
+}
+
+.link {
+    color: $pokered;
+}
+
+button {
+    z-index: 2;
+
+    &:hover, &:active, &:focus, &:visited {
+        outline: none !important;
+    }
+
+    &.white {
+        background-color: $pokewhite;
+        border: 1px solid $pokered;
+        transition: background-color .785s ease, color .6s ease;
+
+        &:hover {
+            background-color: $pokered;
+            color: $pokewhite;
+        }
+    }
+}
